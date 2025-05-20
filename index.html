@@ -1,49 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Документи Онлайн</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Документи Онлайн</h1>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-700 flex items-center">
+      <i class="fas fa-file-alt mr-2"></i> Документи Онлайн
+    </h1>
     <nav>
-      <a href="#" class="mx-2 text-blue-600 hover:underline">Головна</a>
-      <a href="#templates" class="mx-2 text-blue-600 hover:underline">Шаблони</a>
-      <a href="#login" class="mx-2 text-blue-600 hover:underline">Увійти</a>
+      <a href="#" class="mx-2 text-blue-600 hover:underline transition">Головна</a>
+      <a href="#templates" class="mx-2 text-blue-600 hover:underline transition">Шаблони</a>
+      <a href="#login" class="mx-2 text-blue-600 hover:underline transition">Увійти</a>
     </nav>
   </header>
 
-  <main class="p-6 max-w-5xl mx-auto">
-    <section class="mb-10 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Створюйте юридичні документи за хвилини</h2>
-      <p class="mb-6">Виберіть шаблон, дайте відповіді на запитання, і отримайте готовий документ.</p>
-      <a href="#templates" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Почати</a>
+  <main class="p-6 max-w-6xl mx-auto">
+    <section class="mb-12 text-center">
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Створюйте юридичні документи за хвилини</h2>
+      <p class="mb-6 text-lg text-gray-600">Виберіть шаблон, дайте відповіді на запитання, і отримайте готовий документ — швидко та без помилок.</p>
+      <a href="#templates" class="bg-blue-700 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-800 transition duration-300">Почати зараз</a>
     </section>
 
-    <section id="templates" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-xl font-bold mb-2">Договір оренди</h3>
-        <p class="mb-2">Швидке створення договору оренди житла чи приміщення.</p>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Створити</button>
+    <section id="templates" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+          <i class="fas fa-home mr-2"></i> Договір оренди
+        </h3>
+        <p class="mb-4 text-gray-600">Швидке створення договору оренди житла чи приміщення відповідно до законодавства.</p>
+        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Створити</button>
       </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-xl font-bold mb-2">Трудовий договір</h3>
-        <p class="mb-2">Оформіть найм працівника згідно із законом.</p>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Створити</button>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+          <i class="fas fa-briefcase mr-2"></i> Трудовий договір
+        </h3>
+        <p class="mb-4 text-gray-600">Оформлення найму працівника згідно з нормами трудового законодавства.</p>
+        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Створити</button>
       </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-xl font-bold mb-2">Довіреність</h3>
-        <p class="mb-2">Згенеруйте документ для представництва ваших інтересів.</p>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded">Створити</button>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+          <i class="fas fa-user-shield mr-2"></i> Довіреність
+        </h3>
+        <p class="mb-4 text-gray-600">Згенеруйте документ для представництва ваших інтересів іншою особою.</p>
+        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Створити</button>
       </div>
     </section>
   </main>
 
-  <footer class="bg-white shadow mt-12 p-4 text-center">
+  <footer class="bg-white shadow-inner mt-16 p-6 text-center text-sm text-gray-500">
     <p>&copy; 2025 Документи Онлайн. Створено з GPT на <a href="https://gptonline.ai/" class="text-blue-600 hover:underline">gptonline.ai</a></p>
   </footer>
 </body>
